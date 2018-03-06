@@ -1,6 +1,5 @@
-
 //Test Suite
-describe('constructors-and-prototypes', function () {
+describe('constructor functions', function () {
 
 	describe('Problem 1 - ', function () {
 		var seshat = new EgyptianGoddesses('Seshat', 'Written Word', 'Clever and Logical', 'Not in touch with her emotions')
