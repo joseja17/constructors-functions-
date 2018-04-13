@@ -6,17 +6,12 @@
 //BROKEN ON PURPOSE 
 
 function EgyptianGoddesses(name, oversees, strength, weakness) {
-  name = name;
-  oversees = oversees;
-  strength = strength;
-  weakness = weakness;
+  this.name = name;
+  this.oversees = oversees;
+  this.strength = strength;
+  this.weakness = weakness;
 
-  return function() {
-    name,
-    oversees,
-    strength,
-    weakness
-  }
+
   
 }
 
@@ -25,7 +20,7 @@ function EgyptianGoddesses(name, oversees, strength, weakness) {
 
 var maatCharacteristics = ['Maat', 'Truth and Justice', 'Balancing and Just', 'Exacting in her standards']
 
-//Code here
+var maat = new EgyptianGoddesses('Maat', 'Truth and Justice', 'Balancing and Just', 'Exacting in her standards')
 
 
 
@@ -35,17 +30,16 @@ var maatCharacteristics = ['Maat', 'Truth and Justice', 'Balancing and Just', 'E
 
 //BROKEN ON PURPOSE 
 
-function TestScores() {
-  this.name;
-  this.percent;
+function TestScores(name, percent) {
+  this.name = name;
+  this.percent = percent;
 
-  return this.name + this.percent
 }
 
 
 //Now create a new TestScore with the above constructor function, and save it in a variable called suzy. Suzy got a 98 on the test.
 
-//Code here
+var suzy = new TestScores ()
 
 
 
@@ -57,14 +51,21 @@ function TestScores() {
 // Each caveman should have a property called health that is equal to 100 and a property called energy 
 // that is equal to 100.
 
-//Code here
+function Caveman(name, age, weapon){
+  this.name = name;
+  this.age = age;
+  this.weapon = weapon;
+ this.health= 100;
+ this.energy=100;
+
+}
 
 
 // Now create a new Caveman with the constructor function you made called 'larry'. 
 // Larry is 25 and has a 'rock' for a weapon.
 // Save the result to a variable called larry.
 
-//Code here
+var larry = new Caveman('Larry', 25, 'rock')
 
 
 
